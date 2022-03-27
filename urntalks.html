@@ -1,120 +1,105 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" href="./style.css">
-        <link rel="stylesheet" type="text/css" href="menuHamburger.css"/>
-        <link rel="stylesheet" type="text/css" href="signupForm.css"/>
-
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
-
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="speechBubbles.css"/>
         <title>URN Talks</title>
-
     </head>
+    
     <body>
+        <!--Navigation Bar (using Bootstrap) https://mdbootstrap.com/docs/standard/navigation/navbar/#-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <!-- Collapsible wrapper -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <!-- Navbar brand -->
+                    <a class="navbar-brand mt-2 mt-lg-0" href="new_home.html">
+                    <img
+                        src="./assets/urnlogo.png"
+                        height="50"
+                        alt="URN Logo"
+                        loading="lazy"
+                    />
+                    </a>
+                    <!-- Left links -->
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="urnaboutusnew.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="opportunities.html">Opportunities</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="urntalks.html">URN Talks</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="oculus.html">Oculus</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Newsletter</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Research Spotlights</a>
+                    </li>
+                    </ul>
+                    <!-- Left links -->
 
-        <nav role="navigation">
-            <div id="menuHamburger">
-                <input type="checkbox"/>
-
-                <span></span>
-                <span></span>
-                <span></span>
-
-                <ul id="menu">
-                    <a href="http://uvaurn.org/getting-started/"><li>Getting Started</li></a>
-                    <a href="http://uvaurn.org/register-with-urn/"><li>Newsletter</li></a>
-                    <a href="http://uvaurn.org/oculus-home/"><li>The Oculus</li></a>
-                    <a href="http://uvaurn.org/the-committees/"><li>About Us</li></a>
-                    <a href="opportunities.html"><li>Research-Related Opportunities</li></a>
-                    <a href="urntalks.html"><li>URN Talks</li></a>
-                    <a href="http://uvaurn.org/the-committees/"><li>URN Research Spotlights</li></a>
-                    <a href="http://uvaurn.org/the-committees/"><li>Research and COVID-19</li></a>
-                </ul>
-
-
-            </div>
-        </nav>
-        
-        <div class="top_banner">
-            <a href="home.html">
-            <img src = "./assets/urnlogo.png" alt="Undergraduate Research Network"></a>
-        </div>
-
-        <div class="home_content">
-            <img src = "./assets/urntalks_bg.png" alt="What we are about" width=100%> 
-            <br>
-        </div>
-
-        <div class="speech-bubble-right">
-            <p><strong>What is URNTalks?</strong></p>
-            <p>URNTalks is a biweekly student-run research discussion club. During each online meeting, 
-                a student, or group of students, will volunteer to present prepared presentations of about 10-15 minutes 
-                highlighting their own research or interesting published research.</p>
-            <div class="speech-bubble-right__arrow"></div>
-        </div>
-
-        <div class="speech-bubble-left">
-            <p><strong>What do we talk about?</strong></p>
-            <p>Research talks and papers can be from any discipline – biology, economics, anthropology, computer science, 
-                history, chemistry (to name just a few) – are all encouraged! Throughout and after the presentation, 
-                there will be ample time for everyone to discuss the research approach, learn about the methods used, and 
-                analyze how the findings of the paper have influenced the area of study. </p>
-            <div class="speech-bubble-left__arrow"></div>
-        </div>
-
-        <div class="speech-bubble-right">
-            <p><strong>Who is URNTalks for?</strong></p>
-            <p>URNTalks is for everyone and anyone – whether you are new to the realm of research or an experienced researcher, 
-                we hope that this group will provide an inclusive environment to learn more about a certain topic, grow in 
-                terms of knowledge of the field, and become effective communicators in academia.</p>
-            <div class="speech-bubble-right__arrow"></div>
-        </div>
-
-
-        <div class="container" id="container">
-            <div class="form-container sign-in-container">
-                <form action="#">
-                    <h1>Join URNTalks</h1>
-                    <br>
-                    <input type="name" placeholder="Name" />
-                    <input type="email" placeholder="Email" />
-                    <br>
-                    <button>Sign Up</button>
-                </form>
-            </div>
-            <div class="overlay-container">
-                <div class="overlay">
-                    
-                    <div class="overlay-panel overlay-right">
-                        <h1>Join the Email List!</h1>
-                        <br>
-                        <p>Fill out the form on the left if you're interested in presenting and/or attending!</p>
-                        
+                    <div class="d-flex align-items-center">
+                        <!-- Icon -->
+                        <a class="text-reset me-3" href="https://www.instagram.com/uvaurn/">
+                            <i class="bi bi-instagram"></i>
+                        </a>
                     </div>
                 </div>
+                <!-- Collapsible wrapper -->
+
             </div>
-        </div>
+            <!-- Container wrapper -->
+        </nav>
+        <!-- Navbar Close-->
 
-        <div>
-            <br>
-            <br>
-            <br>
-        </div>
+        <!-- Main Content Container -->
+        <div class="container.fluid">
 
-        <div class="footer">
-            <div class="socials">
-                <p class="contact_us">Contact Us</p>
-                <div class="vertical_line" style="height: 80px;"></div>
-                <div class="social_logos">
-                    <img src="./assets/facebook.svg" alt="Check us out on Facebook!">
-                    <div style="padding-right: 38px;"></div>
-                    <img src="./assets/instagram.svg" alt="Check us out on Instagram!">
+            <h1 class="display-1 text-center" >URN Talks</h1>
+
+            <div class="row">
+                <div class="speech-bubble-right">
+                    <p><strong>What is URN Talks?</strong></p>
+                    <p>URNTalks is a biweekly student-run research discussion club. During each online meeting, 
+                        a student, or group of students, will volunteer to present prepared presentations of about 10-15 minutes 
+                        highlighting their own research or interesting published research.</p>
+                    <div class="speech-bubble-right__arrow"></div>
                 </div>
             </div>
-            <p class="copyright">© 2021 Undergraduate Research Network</p>
+
+            <div class="row">
+                <div class="speech-bubble-left">
+                    <p><strong>What do we talk about?</strong></p>
+                    <p>Research talks and papers can be from any discipline – biology, economics, anthropology, computer science, 
+                        history, chemistry (to name just a few) – are all encouraged! Throughout and after the presentation, 
+                        there will be ample time for everyone to discuss the research approach, learn about the methods used, and 
+                        analyze how the findings of the paper have influenced the area of study. </p>
+                    <div class="speech-bubble-left__arrow"></div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="speech-bubble-right">
+                    <p><strong>Who is URN Talks for?</strong></p>
+                    <p>URNTalks is for everyone and anyone – whether you are new to the realm of research or an experienced researcher, 
+                        we hope that this group will provide an inclusive environment to learn more about a certain topic, grow in 
+                        terms of knowledge of the field, and become effective communicators in academia.</p>
+                    <div class="speech-bubble-right__arrow"></div>
+                </div>
+            </div>            
+             
         </div>
+        <!-- Main Content Container Close-->
 
-
+        <!--JS that Bootstrap needs sometimes-->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     </body>
 </html>
